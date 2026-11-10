@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: violet;
+            width: 50%;
+            height: 50%;
+        }
+        .btn{
+            padding: 10px;
+            background-color: blueviolet;
+            gap: 4rem;
+            color: white;
+            border-radius: 10%;
+            text-align: center;
+            
+        }
+
+        .con{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="con">
+        <button class="btn">aaplause</button>
+        <button class="btn">boo</button>
+        <button class="btn">gasp</button>
+        <button class="btn">tada</button>
+        <button class="btn">victory</button>
+        <button class="btn">worng</button>
+        <button class="stop">stop</button>
+    </div>
 
+    <script>
+        const btn=document.getElementsByClassName('btn')
+        const stop = document.querySelector('.stop')
+        const con = document.querySelector('.con')
+
+        stop.style.backgroundColor = 'blueviolet';
+        stop.style.padding = '10px';
+        stop.style.borderRadius = '10%';
+        stop.style.color = 'white';
+    </script>
 </body>
-
 </html>
